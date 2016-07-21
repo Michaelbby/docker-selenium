@@ -7,7 +7,7 @@ import time, unittest, nose, os
 class OnChrome (unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Remote(
-        command_executor='http://hub:4444/wd/hub',
+        command_executor='http://hub.test-selenium-claasv1.myalauda.cn:10366/wd/hub',
         desired_capabilities=DesiredCapabilities.CHROME)
     
     def test_Yunqi_Search_Chrome(self):
