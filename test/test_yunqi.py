@@ -9,7 +9,7 @@ class OnChrome (unittest.TestCase):
         self.driver = webdriver.Remote(
         command_executor='http://hub.test-selenium-claasv1.myalauda.cn:10366/wd/hub',
         desired_capabilities=DesiredCapabilities.CHROME)
-    
+        print("=========testz============$$$$$$$$$$===========testz========")
     def test_Yunqi_Search_Chrome(self):
         driver = self.driver
         driver.get("https://yq.aliyun.com/")
