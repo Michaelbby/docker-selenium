@@ -43,7 +43,7 @@ NODE_IP=$(hostname -i | awk '{ print $1}')
 xvfb-run --server-args="$DISPLAY -screen 0 $GEOMETRY -ac +extension RANDR" \
   java ${JAVA_OPTS} -jar /opt/selenium/selenium-server-standalone.jar \
     -role node -host $NODE_IP \
-    -hub http://hub:$HUB_PORT_4444_TCP_PORT/grid/register \
+    -hub http://hub.test-selenium-claasv1.myalauda.cn:10366/grid/register \
     ${REMOTE_HOST_PARAM} \
     -nodeConfig /opt/selenium/config.json \
     ${SE_OPTS} &
